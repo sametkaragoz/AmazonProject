@@ -11,7 +11,7 @@ import org.junit.runner.RunWith;
         // features klasorundeki feature'larin kodalari cekecegi klasor (stepdefinations)
         glue = "ui/stepdefinations",
         // hangi tag'lerin calistiralacagini secer
-        tags = "@US001",
+        tags = "@US002",
 
         // true yapilirsa belirtilen tag'lerin kod derleme hatalarini kontrol eder
         // false yapilirsa belirtilen tag'leri calistirarak reeldeki hatalarini kontrol eder

@@ -1,11 +1,13 @@
 package ui.utilities;
 
 import io.github.bonigarcia.wdm.WebDriverManager;
+import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.edge.EdgeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
+import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.opera.OperaDriver;
 
 import java.util.concurrent.TimeUnit;
@@ -72,5 +74,13 @@ public class Driver {
             }
         }
         Driver.getDriver().switchTo().window(origin);
+    }
+
+    public static void holdBackSpace(int count) {
+        Actions actions = new Actions(Driver.getDriver());
+        actions.sendKeys(Keys.END).perform();
+        for (int i = 1; i <= count; i++) {
+            actions.sendKeys(Keys.BACK_SPACE).perform();
+        }
     }
 }
