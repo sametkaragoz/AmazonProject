@@ -3,7 +3,6 @@ package ui.stepdefinations;
 import io.cucumber.java.en.And;
 import io.cucumber.java.en.Then;
 import org.openqa.selenium.Keys;
-import org.openqa.selenium.WebElement;
 import org.openqa.selenium.interactions.Actions;
 import org.testng.Assert;
 import ui.pages.Locators;
@@ -21,11 +20,22 @@ public class US_003StepDefination {
 
     @And("Gecerli kullanici bilgileri ile sisteme giris yapar.")
     public void gecerli_kullanici_bilgileri_ile_sisteme_giris_yapar() {
-        locators.accountAndListsButton.click();
-        locators.emailBox.sendKeys(ConfigurationReader.getProperty("email"));
-        actions.sendKeys(Keys.ENTER).perform();
-        locators.passwordBox.sendKeys(ConfigurationReader.getProperty("password"));
-        actions.sendKeys(Keys.ENTER).perform();
+        //do {
+        //    Driver.getDriver().get("https://www.amazon.ca/");
+        //    locators.accountAndListsButton.click();
+        //    locators.emailBox.sendKeys(ConfigurationReader.getProperty("email"));
+        //    actions.sendKeys(Keys.ENTER).perform();
+        //    locators.passwordBox.sendKeys(ConfigurationReader.getProperty("password"));
+        //    actions.sendKeys(Keys.ENTER).perform();
+        //    if (locators.importantMessageBox.isDisplayed()) {
+                Driver.getDriver().get("https://www.amazon.com/");
+                locators.accountAndListsButton.click();
+                locators.emailBox.sendKeys(ConfigurationReader.getProperty("email"));
+                actions.sendKeys(Keys.ENTER).perform();
+                locators.passwordBox.sendKeys(ConfigurationReader.getProperty("password"));
+                actions.sendKeys(Keys.ENTER).perform();
+      //      }
+      //  } while (!(locators.importantMessageBox.isDisplayed()));
     }
 
     @And("Amazon logosu altindaki ALL menusune tiklar.")
@@ -34,8 +44,9 @@ public class US_003StepDefination {
     }
 
     @And("Acilan menulerde Shop By Department sekmesi altindaki Computers kategorisine tiklar.")
-    public void acilanMenulerdeShopByDepartmentSekmesiAltindakiComputersKategorisineTiklar() {
+    public void acilanMenulerdeShopByDepartmentSekmesiAltindakiComputersKategorisineTiklar() throws InterruptedException {
         locators.computersMenuButton.click();
+        Driver.wait(1);
     }
 
     @Then("Acilan menunun Computers kategorisine ait oldugunu kontrol eder.")

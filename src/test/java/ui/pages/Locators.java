@@ -39,15 +39,15 @@ public class Locators {
     @FindBy(xpath = "//*[@id=\"hmenu-content\"]/ul[6]/li[*]/a")
     public List<WebElement> computersSublistWebElement;
 
-    //@FindBy(xpath = "")
-    //public WebElement aa;
-//
-    //@FindBy(xpath = "")
-    //public WebElement aa;
-//
-    //@FindBy(xpath = "")
-    //public WebElement aa;
-//
+    @FindBy(xpath = "//input[@id='twotabsearchtextbox']")
+    public WebElement searchBox;
+
+    @FindBy(xpath = "//*[@id=\"search\"]/div[1]/div[1]/div/span[3]/div[2]/div[*]//*/h2/a/span")
+    public List <WebElement> searcResultDescriptionsList;
+
+    @FindBy(xpath = "//h4[text()='Important Message!']")
+    public WebElement importantMessageBox;
+
     //@FindBy(xpath = "")
     //public WebElement aa;
 //
