@@ -1,3 +1,4 @@
+@US003
 Feature: Kullanici ALL menusunden herhangi bir kategori secebilmeli ve alt kategorilerin listelendigini gorebilmeli.
   Scenario: Kullanici All menusunde Shop By Department sekmesi altindaki Computers kategorisini secebilmeli.
    When Kullanici www.amazon.com sayfasina gider.

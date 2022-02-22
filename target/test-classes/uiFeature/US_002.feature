@@ -16,4 +16,3 @@ Feature: Kullanici gecerli bilgilerle giris yapabilmeli, gecersiz bilgilerle gir
    And   Kullanici gecerli e-mail ya da telefon numarasini girer. Continue butonuna basar.
    And   Acilan sayfadaki ilgili kutucuga gecersiz passwordu girer. Sign-In butonuna basar.
    Then  Gecersiz password hata mesaji alindigi kontrol edilir.
-

@@ -5,6 +5,8 @@ import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 import ui.utilities.Driver;
 
+import java.util.List;
+
 public class Locators {
     public Locators() {
         PageFactory.initElements(Driver.getDriver(), this);
@@ -25,18 +27,18 @@ public class Locators {
     @FindBy(xpath = "//div[@id='auth-error-message-box']")
     public WebElement errorMessageBox;
 
-    //@FindBy(xpath = "")
-    //public WebElement aa;
-//
-    //@FindBy(xpath = "")
-    //public WebElement aa;
-//
-    //@FindBy(xpath = "")
-    //public WebElement aa;
-//
-    //@FindBy(xpath = "")
-    //public WebElement aa;
-//
+    @FindBy(xpath = "//a[@aria-label='Open Menu']")
+    public WebElement allMenuButton;
+
+    @FindBy(xpath = "//div[contains(text(), 'Computers')]")
+    public WebElement computersMenuButton;
+
+    @FindBy(xpath = "//li//div[text()='computers']")
+    public WebElement computersMenuYazisiElementi;
+
+    @FindBy(xpath = "//*[@id=\"hmenu-content\"]/ul[6]/li[*]/a")
+    public List<WebElement> computersSublistWebElement;
+
     //@FindBy(xpath = "")
     //public WebElement aa;
 //
