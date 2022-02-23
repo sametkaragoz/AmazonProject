@@ -48,15 +48,15 @@ public class Locators {
     @FindBy(xpath = "//h4[text()='Important Message!']")
     public WebElement importantMessageBox;
 
-    //@FindBy(xpath = "")
-    //public WebElement aa;
-//
-    //@FindBy(xpath = "")
-    //public WebElement aa;
-//
-    //@FindBy(xpath = "")
-    //public WebElement aa;
-//
+    @FindBy(xpath = "//span[text()='Mountain Bikes']")
+    public WebElement mountainBikesFilterButton;
+
+    @FindBy(xpath = "//span[text()='Aluminum']")
+    public WebElement aluminumFilterButton;
+
+    @FindBy(xpath = "//select[@name='s']")
+    public WebElement sortBySelectObject;
+
     //@FindBy(xpath = "")
     //public WebElement aa;
 //

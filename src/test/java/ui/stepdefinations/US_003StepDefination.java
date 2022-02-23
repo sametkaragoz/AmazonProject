@@ -12,6 +12,7 @@ import ui.utilities.Driver;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
+import java.util.concurrent.TimeUnit;
 
 public class US_003StepDefination {
 
@@ -28,7 +29,7 @@ public class US_003StepDefination {
         //    locators.passwordBox.sendKeys(ConfigurationReader.getProperty("password"));
         //    actions.sendKeys(Keys.ENTER).perform();
         //    if (locators.importantMessageBox.isDisplayed()) {
-                Driver.getDriver().get("https://www.amazon.com/");
+                //Driver.getDriver().get("https://www.amazon.com/");
                 locators.accountAndListsButton.click();
                 locators.emailBox.sendKeys(ConfigurationReader.getProperty("email"));
                 actions.sendKeys(Keys.ENTER).perform();
@@ -46,7 +47,7 @@ public class US_003StepDefination {
     @And("Acilan menulerde Shop By Department sekmesi altindaki Computers kategorisine tiklar.")
     public void acilanMenulerdeShopByDepartmentSekmesiAltindakiComputersKategorisineTiklar() throws InterruptedException {
         locators.computersMenuButton.click();
-        Driver.wait(1);
+        Driver.wait(2);
     }
 
     @Then("Acilan menunun Computers kategorisine ait oldugunu kontrol eder.")
@@ -55,7 +56,8 @@ public class US_003StepDefination {
     }
 
     @Then("Computers kategorisi altinda 15 adet alt kategorinin isimleriyle beraber listelendigini kontrol eder.")
-    public void computersKategorisiAltinda15AdetAltKategorininIsimleriyleBeraberListelendiginiKontrolEder() {
+    public void computersKategorisiAltinda15AdetAltKategorininIsimleriyleBeraberListelendiginiKontrolEder() throws InterruptedException {
+        Driver.wait(1);
         String arr [] = {"Computer Accessories & Peripherals", "Computer Components",
                 "Computers & Tablets", "Data Storage", "External Components", "Laptop Accessories", "Monitors", "Networking Products", "Power Strips & Surge Protectors",
                 "Printers", "Scanners", "Servers", "Tablet Accessories", "Tablet Replacement Parts", "Warranties & Services"};
