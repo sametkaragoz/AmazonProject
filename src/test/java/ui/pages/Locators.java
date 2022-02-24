@@ -48,24 +48,57 @@ public class Locators {
     @FindBy(xpath = "//h4[text()='Important Message!']")
     public WebElement importantMessageBox;
 
-    @FindBy(xpath = "//span[text()='Mountain Bikes']")
-    public WebElement mountainBikesFilterButton;
+    @FindBy(xpath = "//span[text()='Toys & Games']")
+    public WebElement toysAndGamesFilterButton;
 
-    @FindBy(xpath = "//span[text()='Aluminum']")
-    public WebElement aluminumFilterButton;
+    @FindBy(xpath = "//span[text()='Baby & Toddler Toys']")
+    public WebElement babyToysFilterButton;
 
     @FindBy(xpath = "//select[@name='s']")
     public WebElement sortBySelectObject;
 
+    @FindBy(xpath = "//input[@id='add-to-cart-button']")
+    public WebElement addToCartButton;
+
+    @FindBy(xpath = "//span[text()='Currently unavailable.']")
+    public WebElement currentlyUnavailableText;
+
+    @FindBy(xpath = "//a[@id='attach-close_sideSheet-link']")
+    public WebElement cartCloseButton;
+
+    @FindBy(xpath = "//span[@id='nav-cart-count']")
+    public WebElement cartItemCount;
+
+    @FindBy(xpath = "//span[@class='a-size-medium a-color-base sc-price sc-white-space-nowrap sc-product-price a-text-bold']")
+    public List <WebElement> itemCountPriceList;
+
+    @FindBy(xpath = "//a[@id='nav-cart']")
+    public WebElement cartIcon;
+
+    @FindBy(xpath = "(//span[@class='a-size-medium a-color-base sc-price sc-white-space-nowrap'])[2]")
+    public WebElement subTotalText;
+
     //@FindBy(xpath = "")
     //public WebElement aa;
-//
+
     //@FindBy(xpath = "")
     //public WebElement aa;
-//
+
     //@FindBy(xpath = "")
     //public WebElement aa;
-//
+
+    //@FindBy(xpath = "")
+    //public WebElement aa;
+
+    //@FindBy(xpath = "")
+    //public WebElement aa;
+
+    //@FindBy(xpath = "")
+    //public WebElement aa;
+
+    //@FindBy(xpath = "")
+    //public WebElement aa;
+
     //@FindBy(xpath = "")
     //public WebElement aa;
 }

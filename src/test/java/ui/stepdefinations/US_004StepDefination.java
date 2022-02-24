@@ -38,7 +38,7 @@ public class US_004StepDefination {
         for (int i=0 ; i<10 ; i++) {
             int random1 = random.nextInt(resultList.size());
             System.out.println(random1);
-            Assert.assertTrue(resultList.get(random1).contains("Bicycle") || resultList.get(random1).contains("Bikes") || resultList.get(random1).contains("Bike"));
+            Assert.assertTrue(resultList.get(random1).contains("Ball"));
         }
     }
 }
