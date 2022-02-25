@@ -5,6 +5,7 @@ import io.cucumber.java.en.Then;
 import org.openqa.selenium.Keys;
 import org.testng.Assert;
 import ui.pages.Locators;
+import ui.utilities.ConfigurationReader;
 import ui.utilities.Driver;
 
 import java.text.DecimalFormat;
@@ -29,17 +30,19 @@ public class US_006StepDefination {
     @Then("Urun sayfasinda 'Add to Cart' butonuna basilarak urun sepete eklenir.")
     public void urunSayfasindaButonunaBasilarakUrunSepeteEklenir() throws InterruptedException {
         locators.addToCartButton.click();
-
-        locators.searcResultDescriptionsList.clear();
         Driver.wait(1);
-        Driver.getDriver().navigate().back();
-        locators.searchBox.clear();
+        Driver.getDriver().get(ConfigurationReader.getProperty("amazonUrl"));
         locators.searchBox.sendKeys("tree" + Keys.ENTER);
-        int random1 = random.nextInt(locators.searcResultDescriptionsList.size());
-        locators.searcResultDescriptionsList.get(random1).click();
+        locators.searcResultDescriptionsList.clear();
+        for (int i=0 ; i<locators.searcResultDescriptionsList.size() ; i++) {
+            if (locators.searcResultDescriptionsList.get(i).getText().contains("PEIDUO")) {
+                locators.searcResultDescriptionsList.get(i).click();
+                break;
+            }
+        }
         locators.addToCartButton.click();
-        Driver.wait(2);
-        Driver.getDriver().navigate().back();
+        Driver.wait(1);
+        //Driver.getDriver().get(ConfigurationReader.getProperty("amazonUrl"));
     }
 
 

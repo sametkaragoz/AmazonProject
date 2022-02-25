@@ -1,3 +1,4 @@
+@US004
 Feature: Kullanici bir urun aradiginda, listelenen tum urunler aranan kelimeyi icermeli.
   Scenario: Kullanicin aradigi urunlerde, aranan kelime bulunmali.
    When Kullanici www.amazon.com sayfasina gider.

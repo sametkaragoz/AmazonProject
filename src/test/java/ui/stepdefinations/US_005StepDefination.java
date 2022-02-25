@@ -22,6 +22,5 @@ public class US_005StepDefination {
         options.selectByVisibleText("Price: Low to High");
         Driver.wait(1);
         options.selectByVisibleText("Price: High to Low");
-        Driver.wait(15);
     }
 }

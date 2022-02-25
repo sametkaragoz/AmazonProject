@@ -40,12 +40,14 @@ public class US_003StepDefination {
     }
 
     @And("Amazon logosu altindaki ALL menusune tiklar.")
-    public void amazonLogosuAltindakiALLMenusuneTiklar() {
+    public void amazonLogosuAltindakiALLMenusuneTiklar() throws InterruptedException {
+        Driver.wait(1);
         locators.allMenuButton.click();
     }
 
     @And("Acilan menulerde Shop By Department sekmesi altindaki Computers kategorisine tiklar.")
     public void acilanMenulerdeShopByDepartmentSekmesiAltindakiComputersKategorisineTiklar() throws InterruptedException {
+        Driver.wait(1);
         locators.computersMenuButton.click();
         Driver.wait(2);
     }
