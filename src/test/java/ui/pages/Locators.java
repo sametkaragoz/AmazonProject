@@ -81,17 +81,14 @@ public class Locators {
     @FindBy(xpath = "//tbody//a[text()='Fabric']")
     public WebElement fabricLink;
 
-    @FindBy(xpath = "//img[@alt='Amazon Photos']")
-    public WebElement amazonPhotosImage;
+    @FindBy(xpath = "//span[text()='Create a List']")
+    public WebElement createListButton;
 
-    //@FindBy(xpath = "")
-    //public WebElement aa;
+    @FindBy(xpath = "//input[@id='list-name']")
+    public WebElement listNameTextBox;
 
-    @FindBy(linkText = "")
-    public WebElement aca;
-
-    //@FindBy(xpath = "")
-    //public WebElement aa;
+    @FindBy(xpath = "(//div[@class='wl-list-entry-row-wrapper'])[3]")
+    public WebElement newListNameElement;
 
     //@FindBy(xpath = "")
     //public WebElement aa;
