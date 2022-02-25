@@ -1,3 +1,4 @@
+@US006
 Feature: Kullanici rastgele urunler secmeli ve sepete ekleyebilmeli. Eklenen urunlerin fiyat toplami ile sepetteki toplamin ayni oldugunu gormeli
   Scenario: Kullanici sectigi urunleri sepete ekleyebilmeli.
    When Kullanici www.amazon.com sayfasina gider.

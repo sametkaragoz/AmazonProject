@@ -90,12 +90,21 @@ public class Locators {
     @FindBy(xpath = "(//div[@class='wl-list-entry-row-wrapper'])[3]")
     public WebElement newListNameElement;
 
-    //@FindBy(xpath = "")
-    //public WebElement aa;
+    @FindBy(xpath = "//input[@id='add-to-wishlist-button']")
+    public WebElement wishlistOptionsButton;
 
-    //@FindBy(xpath = "")
-    //public WebElement aa;
+    @FindBy(xpath = "(//span[@class='a-size-small atwl-hz-dd-list-name a-nowrap'])[2]")
+    public WebElement wishListSecondOption;
 
-    //@FindBy(xpath = "")
-    //public WebElement aa;
+    @FindBy(xpath = "//span[@id='WLHUC_result_action_add']")
+    public WebElement addedListAssert;
+
+    @FindBy(xpath = "//span[text()='Samet Yeni Liste 1']")
+    public WebElement sametYeniListeButton;
+
+    @FindBy(xpath = "(//input[@name='submit.deleteItem'])[1]")
+    public WebElement deleteItemButton;
+
+    @FindBy(xpath = "//div[text()='Deleted']")
+    public WebElement deletedAlert;
 }

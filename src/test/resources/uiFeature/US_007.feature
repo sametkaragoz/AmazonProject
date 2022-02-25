@@ -1,3 +1,4 @@
+@US007
 Feature: Kullanici ana sayfanin alt kismindaki linklerden herhangi bir satir ya da sutundaki linklerin dogru sayfaya yonlendirdiginden emin olmali
   Scenario: Kullanici amazon.com sayfasinda en altta bulunan linklerden birine tikladiginda dogru sayfaya yonlendirilmeli.
    When Kullanici www.amazon.com sayfasina gider.

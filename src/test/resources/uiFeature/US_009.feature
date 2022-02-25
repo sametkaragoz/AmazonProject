@@ -1,3 +1,4 @@
+@US009
 Feature: Kullanici shoppingListe urunler ekleyip silebilmeli.
   Scenario: Kullanici istedigi urunleri istedigi listeye ekleyebilmeli.
    When Kullanici www.amazon.com sayfasina gider.

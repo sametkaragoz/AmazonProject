@@ -1,3 +1,4 @@
+@US008
 Feature: Kullanici shoppingList olusturabilmeli ve silebilmeli.
   Scenario: Kullanici bir Shopping List olusturabilmeli.
    When Kullanici www.amazon.com sayfasina gider.

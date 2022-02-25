@@ -1,3 +1,4 @@
+@US005
 Feature: Kullanici urun listeleme isleminde filtrelemeleri ve siralamalari kullanabilmeli
   Scenario: Kullanici listelenen urunleri istedigi turde siralayabilmeli ve sonuclari filtreleyebilmeli.
    When Kullanici www.amazon.com sayfasina gider.
